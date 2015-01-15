@@ -1,0 +1,51 @@
+name: bwu_server
+version: 0.0.1
+author: Günter Zöchbauer <guenter@gzoechbauer.com>
+publish-to: none
+environment:
+  sdk: ">=1.9.0-dev <2.0.0"
+
+dependencies:
+  appengine: any
+  args: any
+  collection: any
+  core_elements: any
+  crypto: any
+  gcloud: any
+  googleapis: any
+  googleapis_auth: any
+  googleapis_beta: any
+  http_server: any
+  intl: any
+  logging: any
+  logging_handlers: any
+  path: any
+  paper_elements: any
+  polymer: any
+  quiver: any
+  quiver_log: any
+  smoke: any
+  shelf: any
+  shelf_appengine: any
+  shelf_auth: any
+  shelf_route: any
+  shelf_exception_response: any
+  http_multi_server: any
+  shelf_static: any
+  shelf_web_socket: any
+  uuid: any
+  watcher: any
+
+dependency_overrides:
+  googleapis_beta: ^0.6.0
+  uuid: ^0.5.0
+
+dev_dependencies:
+  unittest: any
+
+transformers:
+- polymer:
+    entry_points:
+    - web/index.html
+    - web/datastore_browser.html
+
